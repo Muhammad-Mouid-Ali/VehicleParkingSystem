@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="30"
+      style="-fx-background-color: #eaf4fb;
+             -fx-padding: 50px;"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="gui.controllers.WelcomePageController">
+
+    <!-- Header Section -->
+    <HBox alignment="CENTER">
+        <Label text="Welcome to ParkEase"
+               style="-fx-font-size: 30px;
+                      -fx-font-weight: bold;
+                      -fx-text-fill: #2c3e50;" />
+    </HBox>
+
+    <!-- Buttons Section -->
+    <VBox alignment="CENTER" spacing="20">
+        <Button fx:id="UserLogin"
+                onAction="#handleLogin"
+                text="User Login"
+                style="-fx-background-color: #3498db;
+                       -fx-text-fill: white;
+                       -fx-font-size: 16px;
+                       -fx-pref-width: 200px;
+                       -fx-padding: 10px;
+                       -fx-background-radius: 10px;" />
+
+        <Button fx:id="UserRegisteration"
+                onAction="#handleRegister"
+                text="User Registration"
+                style="-fx-background-color: #2ecc71;
+                       -fx-text-fill: white;
+                       -fx-font-size: 16px;
+                       -fx-pref-width: 200px;
+                       -fx-padding: 10px;
+                       -fx-background-radius: 10px;" />
+
+        <Button fx:id="AdminLogin"
+                onAction="#handleAdminLogin"
+                text="Admin Login"
+                style="-fx-background-color: #e67e22;
+                       -fx-text-fill: white;
+                       -fx-font-size: 16px;
+                       -fx-pref-width: 200px;
+                       -fx-padding: 10px;
+                       -fx-background-radius: 10px;" />
+    </VBox>
+</VBox>

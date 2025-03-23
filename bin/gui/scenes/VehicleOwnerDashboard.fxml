@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane style="-fx-background-color: #f4f6f8; -fx-padding: 40px;"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.controllers.VehicleOwnerDashboardController">
+
+    <!-- Top Section -->
+    <top>
+        <VBox alignment="CENTER" spacing="20">
+            <Label fx:id="welcomeLabel"
+                   text="Welcome, User!"
+                   style="-fx-font-size: 28px;
+                          -fx-font-weight: bold;
+                          -fx-text-fill: #2c3e50;" />
+        </VBox>
+    </top>
+
+    <!-- Center Section -->
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <!-- Title -->
+            <Label text="Vehicle Owner Dashboard"
+                   style="-fx-font-size: 24px;
+                          -fx-font-weight: bold;
+                          -fx-text-fill: #2c3e50;" />
+
+            <!-- View Grounds Button -->
+            <Button fx:id="viewGroundsButton"
+                    onAction="#handleViewGrounds"
+                    text="View Parking Areas"
+                    style="-fx-background-color: #3498db;
+                           -fx-text-fill: white;
+                           -fx-font-size: 16px;
+                           -fx-padding: 10px;
+                           -fx-pref-width: 200px;
+                           -fx-background-radius: 5px;" />
+
+            <!-- My Bookings Button -->
+            <Button fx:id="myBookingsButton"
+                    onAction="#handleMyBookings"
+                    text="My Bookings"
+                    style="-fx-background-color: #2ecc71;
+                           -fx-text-fill: white;
+                           -fx-font-size: 16px;
+                           -fx-padding: 10px;
+                           -fx-pref-width: 200px;
+                           -fx-background-radius: 5px;" />
+
+            <!-- Make Payment Button -->
+            <Button fx:id="makePaymentButton"
+                    onAction="#handleMakePayment"
+                    text="Make Payment"
+                    style="-fx-background-color: #f1c40f;
+                           -fx-text-fill: black;
+                           -fx-font-size: 16px;
+                           -fx-padding: 10px;
+                           -fx-pref-width: 200px;
+                           -fx-background-radius: 5px;" />
+
+            <!-- Logout Button -->
+            <Button fx:id="logoutButton"
+                    onAction="#handleLogout"
+                    text="Logout"
+                    style="-fx-background-color: #e74c3c;
+                           -fx-text-fill: white;
+                           -fx-font-size: 16px;
+                           -fx-padding: 10px;
+                           -fx-pref-width: 200px;
+                           -fx-background-radius: 5px;" />
+        </VBox>
+    </center>
+</BorderPane>
